@@ -12,7 +12,8 @@ const threegenerator = (
   height,
   direction,
   isRotate,
-  guiIsOpen
+  guiIsOpen,
+  envMap
 ) => {
   // Scene
   const scene = new THREE.Scene();
@@ -79,14 +80,7 @@ const threegenerator = (
 
   // envMap
   const cubeTextureLoader = new THREE.CubeTextureLoader();
-  const environmentMap = cubeTextureLoader.load([
-    "/textures/environmentMaps/0/px.jpg",
-    "/textures/environmentMaps/0/nx.jpg",
-    "/textures/environmentMaps/0/py.jpg",
-    "/textures/environmentMaps/0/ny.jpg",
-    "/textures/environmentMaps/0/pz.jpg",
-    "/textures/environmentMaps/0/nz.jpg",
-  ]);
+  const environmentMap = cubeTextureLoader.load(envMap);
   environmentMap.encoding = THREE.sRGBEncoding;
 
   const updateAllMaterials = () => {
