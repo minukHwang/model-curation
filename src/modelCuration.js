@@ -62,6 +62,7 @@ const threegenerator = (
   // Controls
   const controls = new OrbitControls(camera, canvas);
   controls.enableDamping = true;
+  controls.enableZoom = false;
 
   // Renderer
   const renderer = new THREE.WebGLRenderer({
