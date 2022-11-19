@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #f9fafb;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webgl {
+  background-color: white;
+  border-radius: 32px;
+  padding: 50px;
+}
+/* .webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+} */
